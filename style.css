@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: system-ui, sans-serif;
+}
+*::before, *::after {
+    box-sizing: inherit;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+span, a, label {
+    display: inline-block;
+}
+.btn {
+    font-size: 30px;
+}
+.box {
+    background-color: violet;
+    padding: 25px;
+    font-size: 20px;
+    line-height: 1.6;
+    width: 300px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    display: none;
+}
+.show {
+    display: block;
+    animation: animation1 0.4s linear forwards;
+}
+.hide {
+    animation: animation2 0.4s linear forwards;
+}
+@keyframes animation1 {
+    0% {
+        translate: 100%;
+    }
+    100% {
+        translate: 0;
+    }
+}
+@keyframes animation2 {
+    0% {
+        scale: 1;
+    }
+    100% {
+        scale: 0;
+    }
+}
